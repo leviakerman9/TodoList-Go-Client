@@ -1,0 +1,14 @@
+this is sql query paste it in the mysql workbench or cli 
+
+CREATE DATABASE tododb;
+
+USE tododb;
+
+CREATE TABLE tasks (
+    id BIGINT PRIMARY KEY,
+    content TEXT,
+    status TINYINT,
+    assignee VARCHAR(42)
+);
+
+select *from tasks;  -> this query will display all the tasks created in stored in database

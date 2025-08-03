@@ -164,7 +164,7 @@ func main() {
 
 	wg.Add(1)
 
-	processEvents(&wg,query, client, contractAbi, db, taskCreatedHash)
+	go processEvents(&wg,query, client, contractAbi, db, taskCreatedHash)
 
 	wg.Wait()
 
